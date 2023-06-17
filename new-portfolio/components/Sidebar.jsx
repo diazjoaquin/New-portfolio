@@ -1,10 +1,11 @@
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 
 export default function Sidebar () {
     return (
-        <div className="mx-5 space-y-2 text-white text-3xl fixed h-full flex flex-col justify-center">
-            <a href="https://github.com/diazjoaquin"><AiFillGithub/></a>
-            <a href="https://www.linkedin.com/in/diazjoaquin-dev/"><AiFillLinkedin/></a>
+        <div className="mx-5 space-y-2 text-white text-3xl fixed h-full flex flex-col justify-center z-0">
+            <a href="https://github.com/diazjoaquin" className="hover:scale-125 transition ease-in-out delay-150"><AiFillGithub/></a>
+            <a href="https://www.linkedin.com/in/diazjoaquin-dev/" className="hover:scale-125 transition ease-in-out delay-150"><AiFillLinkedin/></a>
+            <a href="https://www.instagram.com/diazjoaquin_/" className="hover:scale-125 transition ease-in-out delay-150"><AiOutlineInstagram/></a>
         </div>
     )
 };
