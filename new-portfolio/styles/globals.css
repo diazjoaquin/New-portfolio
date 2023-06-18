@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white h-full overflow-x-hidden;
+  @apply bg-gray-200 h-full overflow-x-hidden;
 }
 
 #__next {
@@ -12,4 +12,10 @@ body {
 
 html {
   @apply h-full;
+}
+
+@layer base {
+  html {
+    font-family: 'Kanit', sans-serif;
+  }
 }
