@@ -25,7 +25,7 @@ export default function Nav () {
                     <li className="hover:underline hover:cursor-pointer hover:text-white">Contact</li>
                 </ul>
             </div>
-            <div onClick={toggleMobileMenu} className="lg:hidden flex relative left-20">
+            <div onClick={toggleMobileMenu} className="lg:hidden flex relative left-[60%]">
                 <FaBars className="text-white text-2xl transition"/>
                 <MobileMenu visible={showMobileMenu} />
             </div>
