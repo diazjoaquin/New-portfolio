@@ -14,7 +14,13 @@ const About = () => {
                     <h2 className="text-white uppercase text-4xl">About me</h2>
                     <div>
                         <p className="text-white text-xl">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            I've a curious mind, and great passion and capacity to learn, I'm interested in understand the behavior of everything, to accomplish the better results. I'm a person whit a lot of energy and initiative, and a great capacity to adapt to changes. Capable of perform effectively both in group enviroments and in individual enviroments.
+                            I´ve strong experience in front-end development using technologies such as React, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
+                            As a Full Stack Web Developer, I am excited about the opportunity to work with a company that values innovation and creativity in technology, in wich I can improve my programming skills and knowledge.
+                        </p>
+                        <br />
+                        <p className="text-white text-xl">
+                            I am graduated from Henry Bootcamp as a Full Stack Web Developer. During the course, I learned and developed skills in technologies such as: Javascript, Typescript, React, Node.js, SQL, Express, and more. I am currently working on personal projects, in which I seek to improve my programming skills, as well as learn new technologies (such Next.js, Vue.js, and MongoDB), which allow me archieve the professional profile in that I want to develop myself in the future.
                         </p>
                     </div>
                 </div>
