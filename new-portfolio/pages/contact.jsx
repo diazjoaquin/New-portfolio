@@ -10,7 +10,7 @@ const Contact = () => {
             <div className="absolute top-0 bottom-0 right-0 left-0 bg-zinc-800 z-0 skew-y-[-6deg] origin-top-left"></div>
             <Nav/>
             <Sidebar/>
-            <div className="flex h-full justify-center items-center">
+            <main className="flex h-full justify-center items-center">
                 <div className="h-[75%] w-[65%] gap-10 flex flex-col justify-center items-center absolute rounded-3xl lg:p-12 bg-zinc-900">
                     <div className="text-white flex flex-col items-center gap-1 mt-12">
                         <h2 className="text-4xl">Get in Touch</h2>
@@ -28,7 +28,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
             <Pagination/>
         </section>
     )
