@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Sidebar from "@/components/Sidebar";
 import ContactSidebar from "@/components/ContactSidebar";
-import Pagination from "@/components/Pagination";
+import Pages from "@/components/Pages";
 
 const Contact = () => {
 
@@ -29,7 +29,7 @@ const Contact = () => {
                     </div>
                 </div>
             </main>
-            <Pagination/>
+            <Pages/>
         </section>
     )
 };

@@ -1,14 +1,20 @@
 import Nav from "@/components/Nav";
 import Sidebar from "@/components/Sidebar";
 import { AiFillGithub } from "react-icons/ai";
-import { BsArrowUpRight } from 'react-icons/bs'
+import { BsArrowUpRight } from "react-icons/bs";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 const Portfolio = () => {
+
+    
+
+
     return (
         <section className="relative bg-zinc-900 h-full rounded-e-full rounded-t-sm">
             <Nav/>
             <Sidebar/>
             <main className="flex h-full justify-center items-center w-full h-full">
+                <MdKeyboardArrowLeft className="text-white text-6xl fixed left-20 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
                 <div className="grid lg:grid-cols-2 gap-10 w-[80%] lg:h-[50%]">
                     <div className="relative rounded-xl overflow-hidden">
                         <img src="/images/netflix.png" className="w-full h-full object-cover object-center grayscale hover:grayscale-0 hover:scale-110 ease-in duration-150" alt="" />
@@ -38,6 +44,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
+                <MdKeyboardArrowRight className="text-white text-6xl fixed right-20 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
             </main>
         </section>
     )

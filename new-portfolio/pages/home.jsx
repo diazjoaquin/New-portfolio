@@ -1,6 +1,6 @@
 import Nav from "@/components/Nav";
 import Sidebar from "@/components/Sidebar";
-import Pagination from "@/components/Pagination";
+import Pages from "@/components/Pages";
 import { GiHeartOrgan, GiBrain } from 'react-icons/gi';
 
 
@@ -36,7 +36,7 @@ export default function Home () {
                     </div>
                 </div>
             </div>
-            <Pagination/>
+            <Pages/>
         </section>
     )
 };
