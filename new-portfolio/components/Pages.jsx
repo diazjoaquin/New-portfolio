@@ -1,6 +1,6 @@
-import { VscDebugBreakpointData, VscDebugBreakpointDataUnverified } from 'react-icons/vsc';
+import { VscDebugBreakpointData, VscDebugBreakpointDataUnverified } from "react-icons/vsc";
 
-const Pagination = () => {
+const Pages = () => {
 
     return (
         <div className="hidden lg:flex flex-col absolute text-gray-300 bottom-40 right-40 text-4xl">
@@ -13,4 +13,4 @@ const Pagination = () => {
     );
 };
 
-export default Pagination;
+export default Pages;
