@@ -11,7 +11,7 @@ const Contact = () => {
             <Nav/>
             <Sidebar/>
             <main className="flex h-full justify-center items-center">
-                <div className="h-[75%] w-[65%] gap-10 flex flex-col justify-center items-center absolute rounded-3xl lg:p-12 bg-zinc-900">
+                <div className="h-[75%] w-[65%] gap-10 flex flex-col justify-center items-center absolute rounded-3xl lg:p-12 bg-zinc-900 animate-fade-down animate-once animate-duration-[800ms] animate-delay-500 animate-ease-in">
                     <div className="text-white flex flex-col items-center gap-1 mt-12">
                         <h2 className="text-4xl">Get in Touch</h2>
                         <h3 className="text-xl">Contact Me</h3>
