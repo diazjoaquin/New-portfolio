@@ -28,11 +28,11 @@ export default function Home () {
             <div className="w-full flex items-center justify-center">
                 <div className="h-4/5 flex gap-12 w-9/12 items-center px-12 absolute">
                     <div className="flex-1">
-                        <img src="/images/profile.png" alt="profile" />
+                        <img src="/images/profile.png" className="animate-fade-down animate-once animate-duration-[800ms] animate-delay-500 animate-ease-in" alt="profile" />
                     </div>
-                    <div className="w-full h-full flex flex-1 flex-col justify-center text-white uppercase text-7xl tracking-[.15em]">
-                        <span className="flex items-center gap-2 text-6xl italic" id="visible"><h3>Passionate </h3><GiHeartOrgan className="hover:cursor-pointer  text-7xl text-[#dc2626] drop-shadow-[1px_1px_1px_#dc2626] animate-bounce" onClick={() => handleChangePhrase()}/></span>
-                        <span className="hidden flex items-center gap-2 text-6xl italic" id="hidden"><h3>Creative </h3><GiBrain className="hover:cursor-pointer text-7xl text-[#f9a8d4] drop-shadow-[1px_1px_1px_#f9a8d4] animate-bounce" onClick={() => handleChangePhrase()}/></span><span className="tracking-[.25em] font-black">Web Developer</span>
+                    <div className="w-full h-full flex flex-1 flex-col justify-center text-white uppercase text-7xl tracking-[.05em]">
+                        <span className="flex items-center gap-2 text-6xl font-bold" id="visible"><h3>Passionate </h3><GiHeartOrgan className="hover:cursor-pointer text-7xl text-[#dc2626] animate-jump animate-infinite animate-duration-[1200ms] animate-ease-linear" onClick={() => handleChangePhrase()}/></span>
+                        <span className="hidden flex items-center gap-2 text-6xl font-bold" id="hidden"><h3>Creative </h3><GiBrain className="hover:cursor-pointer text-7xl text-[#f9a8d4] animate-jump animate-infinite animate-duration-[1200ms] animate-ease-linear" onClick={() => handleChangePhrase()}/></span><span className="font-black">Web Developer</span>
                     </div>
                 </div>
             </div>
