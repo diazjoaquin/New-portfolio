@@ -24,7 +24,7 @@ const About = () => {
                             I am graduated from Henry Bootcamp as a Full Stack Web Developer. During the course, I learned and developed skills in technologies such as: Javascript, Typescript, React, Node.js, SQL, Express, and more. I am currently working on personal projects, in which I seek to improve my programming skills, as well as learn new technologies (such Next.js, Vue.js, and MongoDB), which allow me archieve the professional profile in that I want to develop myself in the future.
                         </p>
                     </div>
-                    <button className="text-white text-xl bg-zinc-800 font-bold py-2 w-[25%] flex flex-row items-center justify-center gap-2 rounded-2xl border-2 animate-fade-down animate-once animate-duration-[1000ms] animate-delay-300 animate-ease-in">Download Resume <BsFileEarmarkArrowDown className="text-2xl"/></button>
+                    <button className="text-white text-xl bg-zinc-800 font-bold py-2 w-[25%] flex flex-row items-center justify-center gap-2 rounded-2xl border-2 animate-fade-down animate-once animate-duration-[1000ms] animate-delay-300 animate-ease-in hover:bg-zinc-700">Download Resume <BsFileEarmarkArrowDown className="text-2xl"/></button>
                 </div>
             </div>
         </section>
