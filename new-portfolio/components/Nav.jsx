@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { BiBong } from "react-icons/bi";
 import { FaBars } from 'react-icons/fa';
 import MobileMenu from "./MobileMenu";
+import Link from 'next/link';
 
 export default function Nav () {
 
@@ -20,9 +21,18 @@ export default function Nav () {
             </div>
             <div className="w-5/12 hidden lg:flex">
                 <ul className="w-full flex justify-evenly hover:text-gray-300">
-                    <li className="hover:underline hover:cursor-pointer hover:text-white">About</li>
-                    <li className="hover:underline hover:cursor-pointer hover:text-white">Portfolio</li>
-                    <li className="hover:underline hover:cursor-pointer hover:text-white">Contact</li>
+                    <li className="hover:underline hover:cursor-pointer hover:text-white">
+                        <Link href="/home">Home</Link>
+                    </li>
+                    <li className="hover:underline hover:cursor-pointer hover:text-white">
+                        <Link href="/about">About</Link>
+                    </li>
+                    <li className="hover:underline hover:cursor-pointer hover:text-white">
+                        <Link href="/portfolio">Portfolio</Link>
+                    </li>
+                    <li className="hover:underline hover:cursor-pointer hover:text-white">
+                        <Link href="/contact">Contact</Link>
+                    </li>
                 </ul>
             </div>
             <div onClick={toggleMobileMenu} className="lg:hidden flex relative left-[60%]">
