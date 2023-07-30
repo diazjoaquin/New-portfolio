@@ -4,7 +4,7 @@ export default function Testimonials () {
 
 
     return (
-        <section className="h-full flex items-center justify-center">
+        <section className="h-full flex items-center justify-center animate-fade-down animate-duration-[1200ms] animate-ease-in">
             <main className="border-2 rounded-xl w-7/12 h-[80%] flex flex-col items-center justify-center gap-6 py-6">
                 <div className="w-8/12 h-2/6">
                     <div className="flex items-end text-white text-3xl justify-center gap-4 py-2">
@@ -63,7 +63,6 @@ export default function Testimonials () {
                     </div>
                 </div> */}
             </main>
-            <button className="hidden lg:flex fixed bottom-20 left-20 text-white text-8xl font-bold"><span>2</span></button>
         </section>
     )
 };

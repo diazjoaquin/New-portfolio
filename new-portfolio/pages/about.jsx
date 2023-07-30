@@ -4,12 +4,30 @@ import Testimonials from "@/components/Testimonials";
 import { BsFileEarmarkArrowDown } from 'react-icons/bs';
 
 const About = () => {
+
+    const handleChangePage = (e) => {
+        e.preventDefault();
+        
+        const firstPage = document.getElementById("1");
+        const secondPage = document.getElementById("2");
+
+        if (!firstPage.classList.contains("hidden")) {
+            firstPage.classList.add("hidden");
+            secondPage.classList.remove("hidden");
+        } else {
+            secondPage.classList.add("hidden");
+            firstPage.classList.remove("hidden");
+        }
+        
+    }
+
+
     return (
         <section className="relative bg-zinc-900 h-full rounded-bl-[0%] rounded-br-[70%]">
             <Nav/>
             <Sidebar/>
             <main className="h-full">
-                <section className="h-full flex items-center justify-center hidden">
+                <section id="1" className="h-full flex items-center justify-center">
                     <div>
                         <img src="" alt="" />
                     </div>
@@ -28,8 +46,12 @@ const About = () => {
                         </div>
                         <button className="text-white text-xl bg-zinc-800 font-bold py-2 w-[25%] flex flex-row items-center justify-center gap-2 rounded-2xl border-2 animate-fade-down animate-once animate-duration-[1000ms] animate-delay-300 animate-ease-in hover:bg-zinc-700">Download Resume <BsFileEarmarkArrowDown className="text-2xl"/></button>
                     </div>
+                    <button onClick={(e) => handleChangePage(e)} className="hidden lg:flex fixed bottom-20 right-20 text-zinc-900 text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in"><span>1</span></button>
                 </section>
-                <Testimonials/>
+                <section id="2" className="hidden h-full flex items-center justify-center">
+                    <Testimonials/>
+                    <button onClick={(e) => handleChangePage(e)} className="hidden lg:flex fixed bottom-20 left-20 text-white text-8xl font-bold animate-fade-right animate-duration-[800ms] animate-ease-in"><span>2</span></button>
+                </section>
             </main>
         </section>
     );
