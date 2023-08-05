@@ -4,8 +4,7 @@ export default function Testimonials () {
 
 
     return (
-        <section className="h-full flex items-center justify-center animate-fade-down animate-duration-[1200ms] animate-ease-in">
-            <main className="border-2 rounded-xl w-7/12 h-[80%] flex flex-col items-center justify-center gap-6 py-6">
+            <main className="border-2 rounded-xl w-7/12 h-[80%] flex flex-col items-center justify-center gap-6 py-6 animate-fade-down animate-duration-[1200ms] animate-ease-in">
                 <div className="w-8/12 h-2/6">
                     <div className="flex items-end text-white text-3xl justify-center gap-4 py-2">
                         <a href="https://github.com/SantiRosso" className="hover:scale-125 hover:text-white transition ease-in-out delay-150"><AiFillGithub/></a>
@@ -42,27 +41,6 @@ export default function Testimonials () {
                         </p>
                     </div>
                 </div>
-                {/* <div className="w-8/12 h-1/6">
-                <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
-                <div className="w-8/12 h-1/6">
-                <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div> */}
             </main>
-        </section>
     )
 };
