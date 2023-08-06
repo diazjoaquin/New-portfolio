@@ -18,4 +18,17 @@ html {
   html {
     font-family: 'Kanit', sans-serif;
   }
+
+  #active::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #22c55e;
+    transform: scale(1);
+  }
+
+  .element:hover::after {
+    transform: scaleX(1);
+  }
 }
