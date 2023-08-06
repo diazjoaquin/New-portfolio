@@ -16,7 +16,7 @@ export default function Nav () {
     return (
         <nav className="w-full h-20 fixed text-white flex items-center font-mono text-l uppercase z-0">
             <div className="flex  items-center lg:w-7/12 lg:space-x-5 mx-5">
-                <BiBong className="text-5xl animate-wiggle animate-infinite animate-delay-0 animate-ease-linear"/>
+                <BiBong className="text-5xl text-emerald-500 drop-shadow-[1px_1px_2px_#22c55e] animate-wiggle animate-infinite animate-delay-0 animate-ease-linear"/>
                 <h3 className="font-bold text-2xl text-gray-300 hover:cursor-pointer hover:text-white">Joaquín Díaz</h3>
             </div>
             <div className="w-5/12 hidden lg:flex">
