@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai
 
 export default function Sidebar () {
     return (
-        <div className="mx-5 space-y-2 text-gray-300 text-3xl fixed h-full flex flex-col justify-center z-0 animate-fade animate-once animate-delay-[800ms] animate-ease-in">
+        <div className="mx-5 space-y-2 text-gray-300 text-3xl fixed h-full flex flex-col z-10 justify-center animate-fade animate-once animate-delay-[800ms] animate-ease-in">
             <a href="https://github.com/diazjoaquin" className="hover:scale-125 hover:brightness-150 transition ease-in-out delay-150"><AiFillGithub/></a>
             <a href="https://www.linkedin.com/in/diazjoaquin-dev/" className="hover:scale-125 hover:brightness-150 transition ease-in-out delay-150"><AiFillLinkedin/></a>
             <a href="https://www.instagram.com/diazjoaquin_/" className="hover:scale-125 hover:brightness-150 transition ease-in-out delay-150"><AiOutlineInstagram/></a>
