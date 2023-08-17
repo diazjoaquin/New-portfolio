@@ -16,7 +16,7 @@ html {
 
 @layer base {
   html {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'EB Garamond', serif;
   }
 
   #active::after {
@@ -24,8 +24,12 @@ html {
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #22c55e;
+    background-color: #14b8a6;
     transform: scale(1);
+  }
+
+  #active {
+    color: white
   }
 
   .element:hover::after {
