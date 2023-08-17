@@ -20,7 +20,7 @@ export default function Home () {
 
     return (
         <section className="w-screen h-screen flex bg-zinc-900 overflow-hidden">
-            <div className="absolute bottom-0 w-screen sm:h-[57%] lg:h-[42%] bg-emerald-600 origin-bottom z-10 rounded-tr-[56%] rounded-tl-[65%]"></div>
+            <div className="absolute bottom-0 w-screen sm:h-[57%] lg:h-[42%] bg-teal-600 origin-bottom z-10 rounded-tr-[56%] rounded-tl-[65%]"></div>
             <Nav/>
             <Sidebar/>
             <div className="w-screen flex items-center justify-center font-serif">
