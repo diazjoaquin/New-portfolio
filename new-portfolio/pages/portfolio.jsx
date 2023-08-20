@@ -5,8 +5,14 @@ import { BsArrowUpRight } from "react-icons/bs";
 import Services from "@/components/Services";
 import { projects } from "@/assets/projects";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { useState } from "react";
 
 const Portfolio = () => {
+
+    const [ projectsPerPage ] = useState(1);
+    const [ currentPage, setCurrentPage ] = useState(0);
+    const project = currentPage * projectsPerPage;
+    const currentProjects = projects.slice(project, project + 1);
 
     const handleChangePage = () => {
         const firstPage = document.getElementById("1");
@@ -19,6 +25,14 @@ const Portfolio = () => {
             secondPage.classList.add("hidden");
             firstPage.classList.remove("hidden");
         }
+    }
+ 
+    const handleNext = () => {
+        currentPage < projects.length - 1 ? setCurrentPage(currentPage + 1) : setCurrentPage(0);
+    };
+
+    const handlePrevious = () => {
+        currentPage >= 1 ? setCurrentPage(currentPage - 1) : setCurrentPage(projects.length - 1);
     };
 
     return (
@@ -26,14 +40,14 @@ const Portfolio = () => {
             <Nav/>
             <Sidebar/>
             <main id="1" className="flex h-full justify-center items-center w-full h-full font-sans">
-                <MdKeyboardArrowLeft className="text-white text-6xl fixed left-40 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
-                <div className="grid gap-12 lg:w-[50%] lg:h-[70%]">
+                <MdKeyboardArrowLeft onClick={handlePrevious} className="text-white text-6xl fixed left-40 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
+                <div className="grid gap-12 lg:w-[50%] lg:h-[60%]">
                     {
-                        projects.map((project) => {
+                        currentProjects.map((project) => {
                             return (
-                              <div id={project.id}>
+                              <div id="slide" className={project.id}>
                                 <div className="relative rounded-xl overflow-hidden hover:scale-110 transition">
-                                    <img src={project.img} className="w-full h-full object-cover object-center grayscale hover:grayscale-0" alt="" />
+                                    <img src={project.img} className="w-full lg:min-h-[400px] h-full object-cover object-center grayscale hover:grayscale-0" alt="project"/>
                                     <div className="absolute bg-[#00000080] opacity-0 text-white w-full bottom-[-40px] px-10 text-center text-sm ease-in duration-300 hover:opacity-100 hover:bottom-0">
                                         <p className="pt-6">
                                             {project.description}
@@ -61,7 +75,7 @@ const Portfolio = () => {
                         })
                     }
                 </div>
-                <MdKeyboardArrowRight className="text-white text-6xl fixed right-40 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
+                <MdKeyboardArrowRight onClick={handleNext} className="text-white text-6xl fixed right-40 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
                 <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
             </main>
             <section id="2" className="hidden flex h-full justify-center items-center w-full h-full">
