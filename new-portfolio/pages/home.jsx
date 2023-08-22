@@ -1,6 +1,6 @@
 import Nav from "@/components/Nav";
 import Sidebar from "@/components/Sidebar";
-import { GiHeartOrgan, GiBrain } from 'react-icons/gi';
+import { GiHeartOrgan } from 'react-icons/gi';
 
 
 export default function Home () {
