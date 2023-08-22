@@ -1,5 +1,4 @@
-export const technologies = [
-    {
+export const technologies = {
         frontend: [
             {
                 alt: "CSS",
@@ -27,7 +26,7 @@ export const technologies = [
             },
             {
                 alt: "Sass",
-                img: "/images/technologies/sass.png"
+                img: "/images/technologies/Sass.png"
             },
         ],
 
@@ -61,7 +60,7 @@ export const technologies = [
             },
             {
                 alt: "Javascript",
-                img: "/images/technologies/Javscript.png"
+                img: "/images/technologies/JavaScript.png"
             },
             {
                 alt: "Git",
@@ -72,20 +71,4 @@ export const technologies = [
                 img: "/images/technologies/Visual Studio.png"
             },
         ]
-    }
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-]
+    };

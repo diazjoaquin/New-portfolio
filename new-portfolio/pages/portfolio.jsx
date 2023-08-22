@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import { projects } from "@/assets/projects";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { useState } from "react";
+import Technologies from "@/components/Technologies";
 
 const Portfolio = () => {
 
@@ -80,6 +81,7 @@ const Portfolio = () => {
             </main>
             <section id="2" className="hidden flex h-full justify-center items-center w-full h-full">
                 <Services/>
+                {/* <Technologies/> */}
                 <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 left-20 text-white text-8xl font-bold animate-fade-right animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">1</span></button>
             </section>
         </section>
