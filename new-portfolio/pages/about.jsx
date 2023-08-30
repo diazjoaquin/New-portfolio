@@ -32,8 +32,8 @@ const About = () => {
                         <h2 className="text-white uppercase text-4xl animate-fade-right animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in">About me</h2>
                         <div className="lg:overflow-visible overflow-auto">
                             <p className="text-white text-xl animate-fade-right animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in">
-                                I've a curious mind, and great passion and capacity to learn, I'm interested in understand the behavior of everything, to accomplish the better results. I'm a person whit a lot of energy and initiative, and a great capacity to adapt to changes. Capable of perform effectively both in group enviroments and in individual enviroments.
-                                I've strong experience in front-end development using technologies such as React, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
+                                I&apos; ve a curious mind, and great passion and capacity to learn, I&apos; m interested in understand the behavior of everything, to accomplish the better results. I&apos; m a person whit a lot of energy and initiative, and a great capacity to adapt to changes. Capable of perform effectively both in group enviroments and in individual enviroments.
+                                I&apos; ve strong experience in front-end development using technologies such as React, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
                                 As a Full Stack Web Developer, I am excited about the opportunity to work with a company that values innovation and creativity in technology, in wich I can improve my programming skills and knowledge.
                             </p>
                             <br />
