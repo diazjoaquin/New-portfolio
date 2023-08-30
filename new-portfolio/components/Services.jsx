@@ -1,6 +1,5 @@
 import { BiServer, BiLaptop } from 'react-icons/bi';
 import { BsDatabaseFillCheck } from 'react-icons/bs';
-import Technologies from './Technologies';
 
 
 export default function Services () {
@@ -38,7 +37,6 @@ export default function Services () {
                     </section>
                 </div>
             </section>
-            <Technologies/>
         </main>
     );
 }

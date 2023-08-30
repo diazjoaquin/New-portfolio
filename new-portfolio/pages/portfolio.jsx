@@ -46,7 +46,7 @@ const Portfolio = () => {
                     {
                         currentProjects.map((project) => {
                             return (
-                              <div id="slide" className={project.id}>
+                              <div id="slide" key={project.id}>
                                 <div className="relative rounded-xl overflow-hidden hover:scale-110 transition">
                                     <img src={project.img} className="w-full lg:min-h-[400px] h-full object-cover object-center grayscale hover:grayscale-0" alt="project"/>
                                     <div className="absolute bg-[#00000080] opacity-0 text-white w-full bottom-[-40px] px-10 text-center text-sm ease-in duration-300 hover:opacity-100 hover:bottom-0">
@@ -64,7 +64,7 @@ const Portfolio = () => {
                                     <div className="flex flex-row gap-1">
                                         {project.technologies.map((technologie) => {
                                             return (
-                                            <span className="border-2 bg-zinc-700 px-4 rounded-md py-1 hover:cursor-pointer hover:bg-zinc-600 animate-fade-down animate-once animate-duration-[600ms] animate-ease-in">
+                                            <span id={technologie} key={technologie} className="border-2 bg-zinc-700 px-4 rounded-md py-1 hover:cursor-pointer hover:bg-zinc-600 animate-fade-down animate-once animate-duration-[600ms] animate-ease-in">
                                                 {technologie}
                                             </span>
                                             );
@@ -80,8 +80,9 @@ const Portfolio = () => {
                 <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
             </main>
             <section id="2" className="hidden flex h-full justify-center items-center w-full h-full">
-                <Services/>
-                {/* <Technologies/> */}
+                <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">3</span></button>
+                {/* <Services/> */}
+                <Technologies/>
                 <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 left-20 text-white text-8xl font-bold animate-fade-right animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">1</span></button>
             </section>
         </section>
