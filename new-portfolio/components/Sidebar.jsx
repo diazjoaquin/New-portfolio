@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai";
 
 export default function Sidebar () {
     return (
