@@ -47,7 +47,7 @@ const Portfolio = () => {
                         currentProjects.map((project) => {
                             return (
                               <div id="slide" key={project.id}>
-                                <div className="relative rounded-xl overflow-hidden hover:scale-110 transition">
+                                <div className="relative rounded-xl overflow-hidden hover:scale-110 transition animate-fade-left animate-fill-both">
                                     <img src={project.img} className="w-full lg:min-h-[400px] h-full object-cover object-center grayscale hover:grayscale-0" alt="project"/>
                                     <div className="absolute bg-[#00000080] opacity-0 text-white w-full bottom-[-40px] px-10 text-center text-sm ease-in duration-300 hover:opacity-100 hover:bottom-0">
                                         <p className="pt-6">
