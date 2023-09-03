@@ -86,5 +86,15 @@ export const technologies = {
                 alt: "Visual Studio",
                 img: "/images/technologies/Visual Studio.png"
             },
+            {
+                id: 17,
+                alt: "Visual",
+                img: "/images/technologies/Visual.png"
+            },
+            {
+                id: 18,
+                alt: "ChatGPT",
+                img: "/images/technologies/ChatGPT.png"
+            },
         ]
     };
