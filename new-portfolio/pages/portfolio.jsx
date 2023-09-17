@@ -54,17 +54,17 @@ const Portfolio = () => {
                                             {project.description}
                                         </p>
                                         <span className="flex flex-row text-4xl justify-center gap-6 py-6">
-                                            <a href={project.github}><AiFillGithub/></a>
-                                            <a href={project.url}><BsArrowUpRight/></a>
+                                            <a href={project.github}><AiFillGithub className="hover:text-teal-300 hover:scale-125"/></a>
+                                            <a href={project.url}><BsArrowUpRight className="hover:text-teal-300 hover:scale-125"/></a>
                                         </span>
                                     </div>
                                 </div>
                                 <div className="h-[20%] my-6 text-white text-md">
-                                    <h4 className="text-lg font-bold py-2">Technologies used on this project:</h4>
+                                    <h4 className="text-lg text-white font-bold py-2">Technologies used on this project:</h4>
                                     <div className="flex flex-row gap-1">
                                         {project.technologies.map((technologie) => {
                                             return (
-                                            <span id={technologie} key={technologie} className="border-2 bg-zinc-700 px-4 rounded-md py-1 hover:cursor-pointer hover:bg-zinc-600 animate-fade-down animate-once animate-duration-[600ms] animate-ease-in">
+                                            <span id={technologie} key={technologie} className="border-2 bg-teal-600 px-4 rounded-md py-1 hover:cursor-pointer hover:bg-teal-500 animate-fade-down animate-once animate-duration-[600ms] animate-ease-in transition ease-in-out delay-50">
                                                 {technologie}
                                             </span>
                                             );
@@ -79,10 +79,9 @@ const Portfolio = () => {
                 <MdKeyboardArrowRight onClick={handleNext} className="text-white text-6xl fixed right-40 hover:cursor-pointer hover:scale-125 hover:opacity-1 ease-in-out delay-150"/>
                 <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
             </main>
-            <section id="2" className="hidden flex h-full justify-center items-center w-full h-full">
-                <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">3</span></button>
-                {/* <Services/> */}
+            <section id="2" className="hidden flex flex-col justify-center items-center w-full h-full">
                 <Technologies/>
+                {/* <Services/> */}
                 <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 left-20 text-white text-8xl font-bold animate-fade-right animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">1</span></button>
             </section>
         </section>
