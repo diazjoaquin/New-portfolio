@@ -17,12 +17,13 @@ export default function Testimonials () {
                     return (
                         <div key={testimonial.id} className="lg:w-8/12 h-2/6">
                             <div className="flex items-end text-white text-5xl justify-center gap-4 py-2">
-                                <a href={testimonial.github} className="hover:scale-125 hover:text-white transition ease-in-out delay-150"><AiFillGithub/></a>
-                                <img src={testimonial.img} className="border-4 rounded-full object-center object-cover w-2/12 hover:scale-125" alt="" />
-                                <a href={testimonial.linkedIn} className="hover:scale-125 hover:text-white transition ease-in-out delay-150"><AiFillLinkedin/></a>
+                                <a href={testimonial.github} className="hover:scale-125 hover:text-teal-300 transition ease-in-out delay-150"><AiFillGithub/></a>
+                                <img src={testimonial.img} className="border-4 rounded-full object-center object-cover w-2/12 hover:scale-125 transition ease-in-out delay-150" alt="" />
+                                <a href={testimonial.linkedIn} className="hover:scale-125 hover:text-teal-300 transition ease-in-out delay-150"><AiFillLinkedin/></a>
                             </div>
-                            <div className="px-6">
-                                <p className="text-white text-md text-center">{testimonial.decription}</p>
+                            <h3 className="text-teal-300 flex justify-center text-l font-bold font-sans py-2">{testimonial.name}</h3>
+                            <div className="px-2">
+                                <p className="text-white text-md text-center">&quot;{testimonial.decription}&quot;</p>
                             </div>
                         </div>
                     );
