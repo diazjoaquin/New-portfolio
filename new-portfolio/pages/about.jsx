@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Sidebar from "@/components/Sidebar";
 import Testimonials from "@/components/Testimonials";
 import { BsFileEarmarkArrowDown } from 'react-icons/bs';
+import Image from "next/image";
 
 const About = () => {
 
@@ -24,22 +25,27 @@ const About = () => {
             <Nav/>
             <Sidebar/>
             <main className="h-screen">
-                <section id="1" className="h-screen grid place-items-center font-serif">
-                    {/* <div className="w-5/12">
-                        <img className="" src="images/about.JPG" alt="about" />
-                    </div> */}
-                    <div className="lg:h-[65%] lg:w-7/12 sm:h-4/5 sm:pt-12 lg:pt-0 flex flex-col gap-12 w-9/12 absolute z-0">
-                        <h2 className="text-white uppercase text-4xl animate-fade-right animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in">About me</h2>
-                        <div className="lg:overflow-visible overflow-auto">
-                            <p className="text-white text-xl animate-fade-right animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in">
-                                A curious mind whit great passion and capacity to learn. Interested in understand the behavior of everything, to accomplish the better results.
-                                <br />
-                                Strong experience in front-end development using technologies such as React, Next.js, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
-                            </p>
+                <section id="1" className="h-screen flex items-center justify-center font-serif">
+                    <article className="w-9/12 h-4/6 border-2 border-zinc-700 grid grid-cols-2 place-items-center px-6 gap-2">
+                        <div className="w-full">
+                            <Image className=""
+                            width={500}
+                            height={400}
+                            src="/images/profile.png" alt="about" />
                         </div>
-                        <a href="Resume.pdf" download="Díaz Joaquín - Web Developer.pdf"><button className="text-white text-xl bg-zinc-800 font-bold py-2 lg:w-[30%] flex flex-row items-center justify-center gap-4 rounded-2xl border-2 animate-fade-down animate-once animate-duration-[1000ms] animate-delay-300 animate-ease-in hover:bg-zinc-700 font-sans">Download Resume <BsFileEarmarkArrowDown className="text-2xl text-teal-400"/></button></a>
-                    </div>
-                    <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
+                        <div className="lg:w-full sm:h-5/6 sm:pt-12 lg:pt-0 flex flex-col justify-center gap-12 z-0">
+                            <h2 className="text-white uppercase text-4xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">About me</h2>
+                            <div className="lg:overflow-visible overflow-auto">
+                                <p className="text-white text-xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">
+                                    A curious mind whit great passion and capacity to learn. Interested in understand the behavior of everything, to accomplish the better results.
+                                    <br />
+                                    Strong experience in front-end development using technologies such as React, Next.js, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
+                                </p>
+                            </div>
+                            <a href="Resume.pdf" download="Díaz Joaquín - Web Developer.pdf"><button className="text-white text-xl bg-zinc-800 font-bold py-2 lg:w-[50%] flex flex-row items-center justify-center gap-4 rounded-2xl border-2 animate-fade-down animate-once animate-duration-[700ms] animate-delay-300 animate-ease-in hover:bg-zinc-700 font-sans">Download Resume <BsFileEarmarkArrowDown className="text-2xl text-teal-400"/></button></a>
+                        </div>
+                        <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
+                    </article>
                 </section>
                 <section id="2" className="hidden h-full flex items-center justify-center">
                     <Testimonials/>
