@@ -22,11 +22,12 @@ const About = () => {
 
     return (
         <section className="relative bg-zinc-900 h-screen">
+            <div className="absolute top-0 w-[100%] h-[100%] sm:h-[57%] bg-teal-600 origin-bottom-left skew-y-[-26deg]"></div>
             <Nav/>
             <Sidebar/>
             <main className="h-screen">
                 <section id="1" className="h-screen flex items-center justify-center font-serif">
-                    <article className="w-9/12 h-4/6 border-2 border-zinc-700 grid grid-cols-2 place-items-center px-6 gap-2">
+                    <article className="w-9/12 h-4/6 border-2 border-zinc-600 grid grid-cols-2 place-items-center px-6 gap-2 z-10 backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
                         <div className="w-full">
                             <Image className=""
                             width={500}
@@ -42,10 +43,10 @@ const About = () => {
                                     Strong experience in front-end development using technologies such as React, Next.js, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
                                 </p>
                             </div>
-                            <a href="Resume.pdf" download="Díaz Joaquín - Web Developer.pdf"><button className="text-white text-xl bg-zinc-800 font-bold py-2 lg:w-[50%] flex flex-row items-center justify-center gap-4 rounded-2xl border-2 animate-fade-down animate-once animate-duration-[700ms] animate-delay-300 animate-ease-in hover:bg-zinc-700 font-sans">Download Resume <BsFileEarmarkArrowDown className="text-2xl text-teal-400"/></button></a>
+                            <a href="Resume.pdf" download="Díaz Joaquín - Web Developer.pdf"><button className="text-white text-xl bg-zinc-800 font-bold py-2 lg:w-[50%] flex flex-row items-center justify-center gap-4 rounded-lg border-2 animate-fade-down animate-once animate-duration-[700ms] animate-delay-300 animate-ease-in hover:bg-zinc-700 font-sans">Download Resume <BsFileEarmarkArrowDown className="text-2xl text-teal-400"/></button></a>
                         </div>
-                        <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
                     </article>
+                    <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
                 </section>
                 <section id="2" className="hidden h-full flex items-center justify-center">
                     <Testimonials/>
