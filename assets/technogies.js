@@ -51,7 +51,7 @@ export const technologies = {
             {
                 id: 10,
                 alt: "PosgreSQL",
-                img: "/images/technologies/postgresql.png"
+                img: "/images/technologies/Postgresql.png"
             },
             {
                 id: 11,
@@ -84,7 +84,7 @@ export const technologies = {
             {
                 id: 16,
                 alt: "Visual Studio",
-                img: "/images/technologies/Visual Studio.png"
+                img: "/images/technologies/Visual studio.png"
             },
             {
                 id: 17,
