@@ -22,17 +22,22 @@ const About = () => {
 
     return (
         <section className="relative bg-zinc-900 h-screen">
-            <div className="absolute top-0 w-[100%] h-[100%] sm:h-[57%] bg-teal-600 origin-bottom-left skew-y-[-26deg]"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0" viewBox="0 0 1440 320">
+                <path fill="#14b8a6" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,229.3C640,192,800,96,960,69.3C1120,43,1280,85,1360,106.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
             <Nav/>
             <Sidebar/>
             <main className="h-screen">
                 <section id="1" className="h-screen flex items-center justify-center font-serif">
                     <article className="w-9/12 h-4/6 border-2 border-zinc-600 grid grid-cols-2 place-items-center px-6 gap-2 z-10 backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
                         <div className="w-full">
-                            <Image className=""
+                            <svg viewBox="15 0 200 200" className="absolute z-10" width={550} xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#F1C21B" d="M57.6,-67.9C73.9,-55.1,85.6,-36.1,85.2,-18.1C84.7,0,72.1,17.2,60.6,33.2C49.2,49.1,38.9,64,24.6,70.4C10.3,76.8,-8.2,74.9,-24.5,68.5C-40.8,62,-55,51,-61.1,36.9C-67.3,22.9,-65.4,5.9,-64.2,-13.2C-63.1,-32.2,-62.8,-53.3,-52.2,-67.1C-41.6,-80.9,-20.8,-87.4,0,-87.4C20.7,-87.3,41.4,-80.7,57.6,-67.9Z" transform="translate(100 100)" />
+                            </svg>
+                            <Image className="relative z-20"
                             width={500}
                             height={400}
-                            src="/images/profile.png" alt="about" />
+                            src="/images/profile-2.png" alt="about" />
                         </div>
                         <div className="lg:w-full sm:h-5/6 sm:pt-12 lg:pt-0 flex flex-col justify-center gap-12 z-0">
                             <h2 className="text-white uppercase text-4xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">About me</h2>
