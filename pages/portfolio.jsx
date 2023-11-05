@@ -38,6 +38,9 @@ const Portfolio = () => {
 
     return (
         <section className="relative bg-zinc-900 h-full">
+            <svg className="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#14b8a6" fill-opacity="1" d="M0,224L360,128L720,256L1080,160L1440,32L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+            </svg>
             <Nav/>
             <Sidebar/>
             <main id="1" className="flex h-full justify-center items-center w-full h-full font-sans">
