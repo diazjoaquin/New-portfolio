@@ -62,7 +62,7 @@ const Portfolio = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="h-[20%] my-6 text-white text-md">
+                                <div className="absolute h-[20%] my-6 text-white text-md z-10">
                                     <h4 className="text-lg text-white font-bold py-2">Technologies used on this project:</h4>
                                     <div className="flex flex-row gap-1">
                                         {project.technologies.map((technologie) => {
