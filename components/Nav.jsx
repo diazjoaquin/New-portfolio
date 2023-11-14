@@ -48,7 +48,7 @@ export default function Nav () {
                     </li>
                 </ul>
             </div>
-            <div onClick={toggleMobileMenu} className="lg:hidden flex relative left-[60%]">
+            <div onClick={toggleMobileMenu} className="lg:hidden absolute right-10">
                 <FaBars className="text-white text-2xl transition"/>
                 <MobileMenu visible={showMobileMenu} />
             </div>
