@@ -27,28 +27,25 @@ const About = () => {
             </svg>
             <Nav/>
             <Sidebar/>
-            <main className="h-screen">
-                <section id="1" className="h-screen flex items-center justify-center font-serif">
-                    <article className="w-9/12 h-4/6 border-2 border-zinc-600 grid grid-cols-2 place-items-center px-6 gap-2 z-10 backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
-                        <div className="w-full">
-                            <svg viewBox="15 0 200 200" className="absolute z-10" width={550} xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#F1C21B" d="M57.6,-67.9C73.9,-55.1,85.6,-36.1,85.2,-18.1C84.7,0,72.1,17.2,60.6,33.2C49.2,49.1,38.9,64,24.6,70.4C10.3,76.8,-8.2,74.9,-24.5,68.5C-40.8,62,-55,51,-61.1,36.9C-67.3,22.9,-65.4,5.9,-64.2,-13.2C-63.1,-32.2,-62.8,-53.3,-52.2,-67.1C-41.6,-80.9,-20.8,-87.4,0,-87.4C20.7,-87.3,41.4,-80.7,57.6,-67.9Z" transform="translate(100 100)" />
-                            </svg>
+            <main className="h-screen flex justify-center">
+                <section id="1" className="h-screen lg:w-[90%] xl:w-[85%] flex items-center justify-center font-serif">
+                    <article className="w-8/12 md:w-9/12 h-[60%] md:h-[75%] border-2 border-zinc-600 grid md:grid-cols-2 place-items-center md:px-6 md:gap-6 lg:gap-10 z-10 backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
+                        <div className="w-full hidden md:flex justify-center">
                             <Image className="relative z-20"
                             width={500}
                             height={400}
                             src="/images/profile-2.png" alt="about" />
                         </div>
-                        <div className="lg:w-full sm:h-5/6 sm:pt-12 lg:pt-0 flex flex-col justify-center gap-12 z-0">
-                            <h2 className="text-white uppercase text-4xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">About me</h2>
+                        <div className="lg:w-full h-[70%] md:h-5/6 md:pt-12 lg:pt-0 flex flex-col justify-center gap-6 md:gap-12 px-4 z-0">
+                            <h2 className="text-white uppercase sm:text-sm md:text-2xl lg:text-4xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">About me</h2>
                             <div className="lg:overflow-visible overflow-auto">
-                                <p className="text-white text-xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">
+                                <p className="text-white sm:text-xs md:text-lg lg:text-xl xl:text-2xl animate-fade-right animate-once animate-duration-[500ms] animate-ease-in">
                                     A curious mind whit great passion and capacity to learn. Interested in understand the behavior of everything, to accomplish the better results.
                                     <br />
                                     Strong experience in front-end development using technologies such as React, Next.js, as well as back-end development using Node.js. I have also worked with databases like MongoDB and PostgreSQL to build full-stack applications.
                                 </p>
                             </div>
-                            <a href="Resume.pdf" download="Díaz Joaquín - Web Developer.pdf"><button className="text-white text-xl bg-zinc-800 font-bold py-2 lg:w-[50%] flex flex-row items-center justify-center gap-4 rounded-lg border-2 animate-fade-down animate-once animate-duration-[700ms] animate-delay-300 animate-ease-in hover:bg-zinc-700 font-sans">Download Resume <BsFileEarmarkArrowDown className="text-2xl text-teal-400"/></button></a>
+                            <a href="Resume.pdf" download="Díaz Joaquín - Web Developer.pdf"><button className="text-white text-sm md:text-lg lg:text-xl bg-zinc-800 font-bold py-2 w-[100%] lg:w-[90%] flex flex-row items-center justify-center gap-4 rounded-lg border-2 animate-fade-down animate-once animate-duration-[700ms] animate-delay-300 animate-ease-in hover:bg-zinc-700 font-sans">Download Resume <BsFileEarmarkArrowDown className="text-xl md:text-2xl text-teal-400"/></button></a>
                         </div>
                     </article>
                     <button onClick={() => handleChangePage()} className="hidden lg:flex fixed bottom-20 right-20 text-white text-8xl font-bold animate-fade-left animate-duration-[800ms] animate-ease-in font-sans"><span className="animate-bounce animate-infinite animate-duration-[1200ms] animate-ease-in">2</span></button>
