@@ -7,8 +7,8 @@ export const technologies = {
             },
             {
                 id: 2,
-                alt: "Chakra",
-                img: "/images/technologies/Chakra.png"
+                alt: "Native",
+                img: "/images/technologies/Native.png"
             },
             {
                 id: 3,
@@ -35,6 +35,7 @@ export const technologies = {
                 alt: "Sass",
                 img: "/images/technologies/Sass.png"
             },
+            
         ],
 
         backend: [
@@ -58,6 +59,11 @@ export const technologies = {
                 alt: "Sequelize",
                 img: "/images/technologies/Sequelize.png"
             },
+            {
+                id:12,
+                alt: "psima",
+                img: "/images/technologies/Prisma.png"
+            }
 
         ],
         tools: [
@@ -96,5 +102,10 @@ export const technologies = {
                 alt: "ChatGPT",
                 img: "/images/technologies/ChatGPT.png"
             },
+            {
+                id: 19,
+                alt: "Github",
+                img: "/images/technologies/GitHub.png"
+            }
         ]
     };
