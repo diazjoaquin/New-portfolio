@@ -7,8 +7,8 @@ const MobileMenu = ({visible}) => {
     }
 
     return (
-        <div>
-            <div className="absolute top-8 right-0 bg-black p-5 rounded-lg">
+        <article>
+            <section className="absolute top-8 right-0 bg-black p-5 rounded-lg">
                 <ul className="text-right text-gray-300 flex flex-col gap-2">
                     <li>
                         <Link href="/home">Home</Link>
@@ -23,8 +23,8 @@ const MobileMenu = ({visible}) => {
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </section>
+        </article>
     );
 };
 

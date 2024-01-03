@@ -6,7 +6,7 @@ import { FaMobileAlt } from "react-icons/fa";
 export default function Services () {
 
     return (
-        <section className='flex items-center justify-center h-screen w-screen bg-zinc-900'>
+        <section id="services" className='flex items-center justify-center h-screen w-screen bg-zinc-900'>
             <main className="border-4 border-zinc-700 rounded-lg grid grid-rows-2 h-[75%] bg-zinc-800 justify-center w-8/12 px-4 font-sans animate-fade-up animate-delay-500 animate-ease-in">
                 <section className="flex">
                     <div className="text-white w-full">

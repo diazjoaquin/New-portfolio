@@ -12,7 +12,8 @@ export default function Testimonials () {
     const currentTestimonials = testimonials.slice(first, last); 
 
     return (
-            <main className="border-2 border-zinc-500 rounded-xl sm:w-8/12 lg:w-7/12 h-[80%] flex flex-col items-center justify-start pt-6 gap-24 animate-fade-down animate-duration-[1200ms] animate-ease-in backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
+        <section className="w-screen h-screen bg-zinc-900 flex items-center justify-center">
+            <main className="border-2 border-zinc-500 rounded-xl sm:w-8/12 lg:w-8/12 h-[80%] flex flex-col items-center justify-start pt-6 gap-24 animate-fade-down animate-duration-[1200ms] animate-ease-in backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
                 {currentTestimonials.map((testimonial) => {
                     return (
                         <div key={testimonial.id} className="lg:w-8/12 h-2/6 flex flex-col gap-2 animate-fade-down animate-duration-700 animate-ease-in animate-fill-both">
@@ -28,7 +29,7 @@ export default function Testimonials () {
                         </div>
                     );
                 })}
-                <aside className="relative z-20 top-[30px]">
+                <aside className="absolute z-20 bottom-[-5%]">
                     <li className="text-white text-xl gap-4 flex">
                         <ul className="hover:cursor-pointer hover:scale-150"><FiHexagon id="1" onClick={() => setCurrentPage(1)} className={currentPage === 1 ? "fill-white" : ""}/></ul>
                         <ul className="hover:cursor-pointer hover:scale-150"><FiHexagon id="2" onClick={() => setCurrentPage(2)} className={currentPage === 2 ? "fill-white" : ""}/></ul>
@@ -36,5 +37,7 @@ export default function Testimonials () {
                     </li>
                 </aside>
             </main>
+        </section>
+            
     )
 };

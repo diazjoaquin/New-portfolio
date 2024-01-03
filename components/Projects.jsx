@@ -6,11 +6,8 @@ import { AiFillGithub } from "react-icons/ai";
 export default function Projects () {
 
     return (
-        <section className="relative bg-zinc-900 h-screen w-screen">
-            <svg className="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#14b8a6" fill-opacity="1" d="M0,224L360,128L720,256L1080,160L1440,32L1440,320L1080,320L720,320L360,320L0,320Z"></path>
-            </svg>
-            <main id="1" className="flex justify-center items-center w-full h-full font-sans">
+        <section id="projects" className="relative bg-zinc-900 h-screen w-screen">
+            <main className="flex justify-center items-center w-full h-full font-sans">
                 <div className="grid grid-cols-3 gap-8 lg:w-9/12 lg:h-3/6">
                     {
                         projects.map((project) => {
