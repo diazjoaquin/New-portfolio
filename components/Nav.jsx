@@ -27,7 +27,7 @@ export default function Nav () {
     };
 
     return (
-        <nav className="w-screen h-20 fixed text-white flex items-center font-mono text-l uppercase z-20">
+        <nav className="w-screen h-20 fixed text-white flex items-center font-mono text-l uppercase z-50">
             <div className="flex  items-center lg:w-7/12 lg:space-x-5 mx-5">
                 <BiBong className="text-5xl text-teal-400 drop-shadow-[1px_1px_1.5px_#22c55e] animate-wiggle animate-infinite animate-delay-0 animate-ease-linear"/>
                 <h3 className="font-bold text-2xl text-gray-300 hover:cursor-pointer hover:text-white">Joaquín Díaz</h3>

@@ -6,16 +6,16 @@ import { AiFillGithub } from "react-icons/ai";
 export default function Projects () {
 
     return (
-        <section id="projects" className="relative bg-zinc-900 h-screen w-screen">
-            <main className="flex justify-center items-center w-full h-full font-sans">
-                <div className="grid grid-cols-3 gap-8 lg:w-9/12 lg:h-3/6">
+        <section id="projects" className="relative bg-zinc-900 h-auto lg:h-screen w-screen">
+            <main className="flex justify-center items-center w-full py-24 h-full font-sans">
+                <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-14 h-4/6 w-7/12 lg:w-9/12 lg:h-3/6">
                     {
                         projects.map((project) => {
                             return (
                               <div className="z-20 h-full w-full px-1 pt-2 rounded-xl bg-zinc-100" id="slide" key={project.id}>
                                 <div className="relative rounded-xl overflow-hidden hover:scale-110 transition animate-fade-left animate-fill-both">
                                     <img src={project.img} className="w-full lg:min-h-[300px] h-full object-cover object-center grayscale hover:grayscale-0" alt="project"/>
-                                    <div className="absolute bg-[#00000080] opacity-0 text-white w-full bottom-[-40px] px-10 text-center text-sm ease-in duration-300 hover:opacity-100 hover:bottom-0">
+                                    <div className="absolute bg-[#00000080] opacity-0 text-white w-full bottom-[-40px] px-4 text-center text-sm ease-in duration-300 hover:opacity-100 hover:bottom-0">
                                         <p className="pt-6">
                                             {project.description}
                                         </p>
