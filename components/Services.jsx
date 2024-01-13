@@ -7,7 +7,7 @@ export default function Services () {
 
     return (
         <section id="services" className='flex items-center justify-center sm:h-auto md:h-screen w-screen bg-zinc-900'>
-            <main className="border-4 border-zinc-700 rounded-lg h-full my-12 bg-zinc-800 w-8/12 lg:px-4 text-justify font-sans animate-fade-up animate-delay-500 animate-ease-in">
+            <main className="border-4 border-zinc-700 rounded-lg lg:h-5/6 h-full my-12 bg-zinc-800 w-8/12 lg:px-4 text-justify font-sans animate-fade-up animate-delay-500 animate-ease-in">
                 <section className="flex h-full">
                     <div className="text-white w-full h-auto">
                         <h1 className="text-3xl uppercase px-4 pt-12 pb-6 font-bold font-serif">Services</h1>
