@@ -2,7 +2,7 @@ export default function Contact () {
     return (
         <section id="contact" className="h-screen w-screen bg-zinc-900">
             <main className="flex h-full justify-center items-center">
-                <div className="z-10 h-[75%] w-[45%] gap-10 flex flex-col justify-center items-center absolute rounded-xl lg:p-12 animate-fade-down animate-once animate-duration-[800ms] animate-delay-500 animate-ease-in border-2 border-zinc-800 backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
+                <div className="z-10 h-[75%] w-8/12 gap-10 flex flex-col justify-center items-center absolute rounded-xl lg:p-12 animate-fade-down animate-once animate-duration-[800ms] animate-delay-500 animate-ease-in border-2 border-zinc-800 backdrop-blur-sm backdrop-saturate-50 backdrop-brightness-125">
                     <div className="text-white flex flex-col mt-12">
                         <h2 className="text-4xl font-serif">Get in Touch!</h2>
                     </div>
