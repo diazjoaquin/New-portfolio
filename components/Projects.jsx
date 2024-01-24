@@ -6,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 export default function Projects () {
 
     return (
-        <section id="projects" className="relative bg-zinc-900 h-auto lg:h-screen w-screen">
+        <section id="portfolio" className="relative bg-zinc-900 h-auto lg:h-screen w-screen">
             <main className="flex justify-center items-center w-full py-24 h-full font-sans">
                 <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-14 h-4/6 w-7/12 lg:w-9/12 lg:h-3/6">
                     {
