@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState } from "react";
 import { BiBong } from "react-icons/bi";
 import { FaBars } from 'react-icons/fa';
 import MobileMenu from "./MobileMenu";
@@ -7,7 +7,6 @@ import Link from 'next/link';
 export default function Nav () {
 
     const [ showMobileMenu, setShowMobileMenu ] = useState(false);
-    const [ activeLink, setActiveLink ] = useState('');
 
     const toggleMobileMenu = useCallback(() => {
         setShowMobileMenu((current) => !current)
