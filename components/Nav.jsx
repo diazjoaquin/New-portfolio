@@ -1,19 +1,39 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { BiBong } from "react-icons/bi";
 import { FaBars } from 'react-icons/fa';
 import MobileMenu from "./MobileMenu";
 import Link from 'next/link';
 
+const TOP_OFFSET = 66;
+
 export default function Nav () {
 
     const [ showMobileMenu, setShowMobileMenu ] = useState(false);
+    const [showBackground, setShowBackground] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= TOP_OFFSET) {
+                setShowBackground(true);
+            } else {
+                setShowBackground(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
 
     const toggleMobileMenu = useCallback(() => {
         setShowMobileMenu((current) => !current)
     }, []);
 
     return (
-        <nav className="w-screen h-20 fixed text-white flex items-center font-mono text-l uppercase z-50">
+        <nav className={`w-screen h-20 fixed text-white flex items-center font-mono text-l uppercase z-50 ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}
+        `}>
             <div className="flex  items-center lg:w-7/12 lg:space-x-5 mx-5">
                 <BiBong className="text-5xl text-teal-400 drop-shadow-[1px_1px_1.5px_#22c55e] animate-wiggle animate-infinite animate-delay-0 animate-ease-linear"/>
                 <h3 className="font-bold text-2xl text-gray-300 hover:cursor-pointer hover:text-white">Joaquín Díaz</h3>

@@ -17,6 +17,11 @@ html {
 @layer base {
   html {
     font-family: 'EB Garamond', serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    scroll-behavior: smooth;
   }
 
   #active::after {
