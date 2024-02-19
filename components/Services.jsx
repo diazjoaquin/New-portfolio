@@ -7,10 +7,10 @@ export default function Services () {
 
     return (
         <section id="services" className='flex items-center justify-center sm:h-auto md:h-screen w-screen bg-zinc-900'>
-            <main className="border-4 border-zinc-700 rounded-lg lg:h-5/6 h-full my-12 bg-zinc-800 w-8/12 lg:px-4 text-justify font-sans animate-fade-up animate-delay-500 animate-ease-in">
+            <main className="border-4 border-zinc-700 rounded-lg lg:h-5/6 h-full my-12 bg-zinc-800 w-9/12 lg:px-4 text-justify font-sans animate-fade-up animate-delay-500 animate-ease-in">
                 <section className="flex h-full">
                     <div className="text-white w-full h-auto">
-                        <h1 className="text-3xl uppercase px-4 pt-12 pb-6 font-bold font-serif">Services</h1>
+                        <h1 className="text-3xl uppercase px-4 pt-6 md:pt-12 pb-6 font-bold font-serif">Services</h1>
                         <section className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-y-10 lg:h-5/6 h-auto pb-5">
                             <article className="flex flex-col px-8 gap-2 py-2">
                                 <h2 className="animate-fade-left animate-delay-[900ms] animate-ease-in font-bold text-xl flex items-center gap-2"><span className="border-2 border-emerald-600 rounded-full p-2 bg-emerald-600 hover:bg-emerald-500 hover:border-white hover:cursor-pointer"><BiLaptop/></span>Front-End Development</h2>
